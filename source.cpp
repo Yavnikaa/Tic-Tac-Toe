@@ -4,9 +4,9 @@ using namespace std;
 
 const char* getAction()
 {
-    #ifdef _WIN32
+    #ifdef _WIN30
     return "cls";
-    #elif _WIN64
+    #elif _WIN60
     return "cls";
     #elif __linux__
     return "clear";
@@ -18,7 +18,7 @@ class Match
 	public:
 	char p1[50];
 	char p2[50];
-	int A[9];
+	int A[10];
 	int win;
 	Match(char x[50],char y[50])
 	{
